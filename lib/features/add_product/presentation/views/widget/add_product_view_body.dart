@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_hub_dashboard/core/widget/custom_button.dart';
 
 class AddProductViewBody extends StatefulWidget {
   const AddProductViewBody({super.key});
@@ -19,8 +20,12 @@ final GlobalKey<FormState> formKey = GlobalKey<FormState>();
         child: Form(
           key: formKey,
           autovalidateMode: autovalidateMode,
-          child: const Column(
-            children:  [],
+          child:  Column(
+            children:  [
+                CustomButton(
+                
+                text: "add data", onPressed: () { null; },),
+            ],
           ),
         ),
       ),
